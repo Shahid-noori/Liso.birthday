@@ -1,0 +1,1 @@
+Put an audio file named birthday.mp3 here. Music starts only after the user clicks Open Your Gift.

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffd8e8">
+  <meta name="description" content="A dreamy interactive birthday surprise made especially for Lisa.">
+  <title>Happy Birthday, Lisa 🎀</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="opening" class="opening">
+    <div class="opening-orb orb-a"></div><div class="opening-orb orb-b"></div>
+    <div class="opening-decor" aria-hidden="true">
+      <span>♡</span><span>✦</span><span>♡</span><span>✧</span><span>♡</span>
+    </div>
+    <div class="opening-card">
+      <div class="cat-placeholder">🎀🐱</div>
+      <p class="eyebrow">A little surprise</p>
+      <h1>Hi Lisa <span>💗</span></h1>
+      <p class="opening-line" id="openingLine">Something special was made just for you...</p>
+      <p class="opening-reveal">Happy Birthday, Lisa! 🎀</p>
+      <button class="btn btn-primary gift-open" id="openGift">Open Your Gift <span>🎁</span></button>
+    </div>
+  </div>
+
+  <div id="app" class="site hidden">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#home"><span>🎀</span> Lisa's Day</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a><a href="#memories">Memories</a><a href="#gallery">Gallery</a><a href="#wishes">Wishes</a><a href="#surprise">Surprise</a>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="hero-particles" aria-hidden="true"></div>
+        <div class="balloon balloon-1">🎈</div><div class="balloon balloon-2">🎈</div>
+        <div class="hero-content reveal">
+          <span class="pill">A digital birthday gift · made with love</span>
+          <h2>Happy Birthday,<br><em>Lisa!</em> 🎀</h2>
+          <p class="hero-subtitle">Today is all about you.</p>
+          <div class="hero-card glass">
+            <div class="card-ribbon">🎀</div>
+            <div class="mini-cat">🐱</div>
+            <p>May your day be filled with happiness, beautiful memories, endless smiles and everything your heart wishes for.</p>
+            <div class="sparkle-row">✦ ♡ ✦ ♡ ✦</div>
+          </div>
+          <a href="#memories" class="scroll-cue">Scroll into the surprise <span>↓</span></a>
+        </div>
+      </section>
+
+      <section id="memories" class="section section-soft">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Little moments</span>
+          <h2>Memories worth keeping <span>♡</span></h2>
+          <p>Every memory becomes more beautiful when you look back at it.</p>
+        </div>
+        <div class="scrapbook reveal">
+          <article class="paper polaroid tilt-a"><div class="photo-frame"><img src="assets/images/photo_2026-09-23_22-40-58.jpg" alt="Lisa memory" loading="lazy"></div><span class="tape">♡</span><p>One beautiful moment.</p></article>
+          <article class="paper note tilt-b"><span class="pin">✦</span><p>“Some people make ordinary days feel a little more special.”</p><small>— a tiny note for Lisa</small></article>
+          <article class="paper polaroid tilt-c"><div class="photo-frame"><img src="assets/images/photo_2026-09-23_22-39-11.jpg" alt="Lisa memory" loading="lazy"></div><p>A memory to smile about.</p></article>
+          <article class="paper note pink tilt-d"><span class="pin">🎀</span><p>Keep the happy moments close. They are little pieces of magic.</p></article>
+          <article class="paper polaroid tilt-e"><div class="photo-frame"><img src="assets/images/photo_2026-09-23_22-41-03.jpg" alt="Lisa memory" loading="lazy"></div><p>Another page of your story.</p></article>
+        </div>
+      </section>
+
+      <section id="gallery" class="section">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Your little gallery</span>
+          <h2>Lisa's photo story 📸</h2>
+          <p>Your photos are loaded directly from <code>assets/images/</code>.</p>
+        </div>
+        <div class="gallery" id="galleryGrid"></div>
+      </section>
+
+      <section class="section reasons-section">
+        <div class="section-heading reveal">
+          <span class="eyebrow">A few little things</span>
+          <h2>Why Lisa is special 💗</h2>
+          <p>Tap a card. Each one has a tiny message waiting inside.</p>
+        </div>
+        <div class="reasons-grid">
+          <button class="reason-card reveal" data-message="Your smile has a way of making a simple moment feel brighter.">😊<strong>Your Smile</strong><span>Tap me</span></button>
+          <button class="reason-card reveal" data-message="Kindness is one of the quietest and most beautiful things a person can give.">🌷<strong>Your Kindness</strong><span>Tap me</span></button>
+          <button class="reason-card reveal" data-message="You bring your own little spark wherever you go.">✨<strong>Your Energy</strong><span>Tap me</span></button>
+          <button class="reason-card reveal" data-message="A beautiful heart makes everything around it feel warmer.">💗<strong>Your Heart</strong><span>Tap me</span></button>
+          <button class="reason-card reveal" data-message="There is only one Lisa, and that is what makes your presence memorable.">🎀<strong>Your Personality</strong><span>Tap me</span></button>
+          <button class="reason-card reveal" data-message="Sometimes simply being there is enough to make a moment matter.">🫶<strong>Your Presence</strong><span>Tap me</span></button>
+        </div>
+      </section>
+
+      <section class="section countdown-section">
+        <div class="countdown-wrap glass reveal">
+          <span class="eyebrow">The special moment</span>
+          <h2>Counting down to your birthday ✨</h2>
+          <p id="countdownLabel">A little timer for the next celebration.</p>
+          <div class="countdown" id="countdown">
+            <div><strong id="days">00</strong><span>Days</span></div>
+            <div><strong id="hours">00</strong><span>Hours</span></div>
+            <div><strong id="minutes">00</strong><span>Minutes</span></div>
+            <div><strong id="seconds">00</strong><span>Seconds</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="wishes" class="section wishes-section">
+        <div class="wish-layout">
+          <div class="wish-copy reveal">
+            <span class="eyebrow">A secret note</span>
+            <h2>There's a little secret waiting for you... 💌</h2>
+            <p>Some messages are more fun when you have to discover them.</p>
+            <button class="btn btn-primary" id="revealSecret">Reveal It 💌</button>
+          </div>
+          <div class="secret-note" id="secretNote">
+            <span>For Lisa</span>
+            <p>May this new chapter bring you peaceful days, genuine happiness, beautiful surprises and many moments that make you stop and smile.</p>
+            <strong>Happy Birthday 💗</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section gift-section">
+        <div class="section-heading reveal">
+          <span class="eyebrow">A tiny digital present</span>
+          <h2>One little gift 🎁</h2>
+        </div>
+        <div class="gift-stage reveal" id="giftStage" tabindex="0" role="button" aria-label="Open birthday gift">
+          <div class="gift-box">
+            <div class="gift-lid"></div><div class="gift-body"></div><div class="gift-ribbon-v"></div><div class="gift-ribbon-h"></div>
+          </div>
+          <div class="gift-sparkles">✦ ✧ ♡ ✦</div>
+        </div>
+        <p class="gift-message" id="giftMessage">One little gift for one very special person. 🎀</p>
+      </section>
+
+      <section class="section player-section">
+        <div class="music-player glass reveal">
+          <div class="music-icon">♪</div>
+          <div class="track-info"><strong>Birthday soundtrack</strong><span>birthday.mp3 · optional</span></div>
+          <button id="playBtn" class="icon-btn" aria-label="Play music">▶</button>
+          <button id="muteBtn" class="icon-btn" aria-label="Mute music">🔊</button>
+          <div class="progress"><span id="progressBar"></span></div>
+          <audio id="audio" preload="metadata" src="assets/music/birthday.mp3"></audio>
+        </div>
+      </section>
+
+      <section id="surprise" class="final-section">
+        <div class="final-stars">✦　♡　✧　♡　✦</div>
+        <span class="eyebrow">One last thing...</span>
+        <h2>Ready for the final surprise?</h2>
+        <button class="btn btn-light" id="finalSurprise">One Last Surprise ✨</button>
+        <p class="footer-note">Made especially for Lisa 🎀<br><span>Happy Birthday, Lisa 💗</span><br><small>With lots of smiles, memories and good wishes.</small></p>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">×</button>
+      <button class="lightbox-nav prev" id="prevPhoto" aria-label="Previous photo">‹</button>
+      <figure><img id="lightboxImg" alt="Lisa memory"><figcaption><span id="lightboxCaption"></span><small id="lightboxCounter"></small></figcaption></figure>
+      <button class="lightbox-nav next" id="nextPhoto" aria-label="Next photo">›</button>
+    </div>
+
+    <div class="final-overlay" id="finalOverlay">
+      <div class="final-heart">♡</div>
+      <div class="final-message">
+        <div class="kitty-badge">🎀🐱🎀</div>
+        <h2>Happy Birthday, Lisa.</h2>
+        <p>May this new year of your life bring you countless beautiful moments, peaceful days, unforgettable memories and many reasons to smile. 💗🎀</p>
+        <button class="btn btn-light" id="restart">Start Again</button>
+      </div>
+    </div>
+    <div id="fx" aria-hidden="true"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

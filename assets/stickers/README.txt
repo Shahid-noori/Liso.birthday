@@ -1,0 +1,1 @@
+Put approved/owned cat or Hello Kitty sticker PNGs here. The current design uses emoji placeholders.
